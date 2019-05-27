@@ -5,14 +5,14 @@ body {
 
 .background {
   background-image: url("../images/background.jpg");
-  height: 40vh;
+  min-height: 40vh;
   width: 100%;
   background-size: cover;
   background-position: 48% 18%; }
 
 .section {
   background-color: #f3f3f3;
-  height: 60vh;
+  min-height: 60vh;
   position: relative;
   padding: 60px 0;
   box-sizing: border-box; }
@@ -34,12 +34,13 @@ body {
       font-size: 14px;
       margin: 0; }
   .section .paragrph-box {
-    width: 70%;
+    max-width: 970px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 42px;
-    height: 108px;
+    min-height: 108px;
     position: relative;
+    padding: 0 25px;
     z-index: 1; }
     .section .paragrph-box::before {
       position: absolute;
@@ -78,5 +79,19 @@ body {
     display: block; }
     .section .generate-btn:hover {
       background: #0c9224; }
+
+/*-----media queries------*/
+@media (max-width: 719px) {
+  .section .title-box .title {
+    font-size: 25px; } }
+@media (max-width: 632px) {
+  .section .title-box {
+    width: 50%; } }
+@media (max-width: 439px) {
+  .section .paragrph-box .paragraph {
+    font-size: 19px; } }
+@media (max-width: 369px) {
+  .section .title-box {
+    width: 55%; } }
 
 /*# sourceMappingURL=style.css.map */
