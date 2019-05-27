@@ -14,7 +14,8 @@ body {
   background-color: #f3f3f3;
   height: 60vh;
   position: relative;
-  padding: 60px 0; }
+  padding: 60px 0;
+  box-sizing: border-box; }
   .section .title-box {
     background: rgba(0, 0, 0, 0.418);
     padding: 20px;
@@ -36,15 +37,37 @@ body {
     width: 70%;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 20px;
-    height: 108px; }
+    margin-bottom: 42px;
+    height: 108px;
+    position: relative;
+    z-index: 1; }
+    .section .paragrph-box::before {
+      position: absolute;
+      height: 80px;
+      width: 86px;
+      background: #e6f339;
+      content: "";
+      left: 27px;
+      z-index: 0;
+      top: -28px; }
+    .section .paragrph-box::after {
+      position: absolute;
+      height: 80px;
+      content: "";
+      background: #6172bf;
+      width: 86px;
+      z-index: 0;
+      right: 40px;
+      bottom: -8px; }
     .section .paragrph-box .paragraph {
       display: inline-block;
       margin: 0;
-      font-size: 22px; }
+      font-size: 22px;
+      position: relative;
+      z-index: 1; }
   .section .generate-btn {
     width: 230px;
-    background: #2b409e;
+    background: #0fc32f;
     border: none;
     color: #fff;
     padding: 10px 34px;
@@ -54,6 +77,6 @@ body {
     margin: 0 auto;
     display: block; }
     .section .generate-btn:hover {
-      background: #4663e0; }
+      background: #0c9224; }
 
 /*# sourceMappingURL=style.css.map */
